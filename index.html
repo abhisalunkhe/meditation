@@ -1,0 +1,557 @@
+<html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meditation</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+  }
+ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+    margin-left:40%;
+    margin-right:0vw;
+    float: right;
+}
+
+li {
+    display:inline-block;
+    margin-right: 10px;
+}
+
+li a {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+    letter-spacing:2px;
+    display:block;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color:black;
+	  background-color:rgb(201, 162, 162);
+    text-decoration: none;
+    border-radius: 10px;
+}
+.li a :hover{
+  background-color: #fff;
+}
+
+.type{
+  background: linear-gradient(rgba(231, 206, 206, 0.5),rgba(0,0,0,.7));
+  border-right: 3px solid salmon;
+}
+.types-cont{
+  margin-top: 10px;
+  margin-left: 35%;
+}
+.type a{
+  text-decoration: none;
+  font-size: large;
+  text-align: justify;
+  list-style: none;
+  color: rgb(70, 59, 39);
+  text-transform: uppercase;
+}
+.type a:hover{
+  color: #f2f2f2;
+}
+.talks{
+  background: linear-gradient(rgba(231, 206, 206, 0.5),rgba(0,0,0,.7));
+}
+.talks-cont{
+  margin-top: 15px;
+  margin-left: 35%;
+  line-height: 30px;
+  text-decoration: none;
+}
+.talks-cont a{
+  text-align: justify;
+  list-style: none;
+  font-size: medium;
+  text-decoration: none;
+  list-style: none;
+  color: rgb(70,59,39);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.talks-cont a:hover{
+  color: #f2f2f2;
+}
+.menu-items1 {
+    min-width:90px;
+    margin-top:1.5px;
+}
+
+.menu-items2-1 {
+    margin-left:20px;
+}
+
+.menu-items2-2 {
+    margin-left:20px;
+    margin-top:0.5px;
+}
+
+.menu-items2-3 {
+    margin-left:10px;
+}
+
+.menu-items2-4 {
+    margin-left:30px;
+    margin-top:0.5px;
+}
+
+li:hover a {
+    text-decoration:none;
+  color: rgb(219, 87, 87);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+.marvellous-talk{
+  margin-top: 20px;
+}
+.marvellous-talk a{
+  text-decoration: none;
+  list-style: none;
+  text-transform: uppercase;
+  text-align: justify;
+  color: #423838;
+  font-weight: bold;
+  font-size: large;
+}
+.marvellous-talk h2{
+  text-align: center;
+  text-transform: uppercase;
+}
+.right{
+	font-family: "Open Sans", sans-serif;
+	right:50px;
+	left:150px;
+	padding:10px;
+  text-align: justify;
+  margin-left: 20%;
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: +80px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+</style>
+</head><body>
+
+
+<div>
+<img src="./img 420.png" alt="img.jpg" height="300px" width="1520px"></img>
+</div><br>
+<img src="./Logo.png" alt="logo" height="90px" width="90px" style="float:left; margin-left:10px;"></img>
+<div id="menu3">
+<ul id="menu" style="float:right;">
+   <li><a href="./About us.html" class="menu-items1"><b>About Us</b></a></li>
+  <li><a href="./Common img.html" class="menu-items1"><b>Images</b></a></li>
+   <li><a href="./meditation videos.html" class="menu-items1"><b>Videos</b></a></li>
+     <li><a href="./FORM 123.html" class="menu-items1"><b>Register</b></a></li>
+  <li><a href="./Contact us.html" class="menu-items1"><b>Contact Us</b></a></li>
+  <li><a href="./Terms and condition.html" class="menu-items1"><b>Terms And Condition</b></a></li>
+  <li><a href="./Feedback form .html" class="menu-items1"><b>FeedBack</b></a></li>
+</ul>
+</div><br><br>
+<div>
+<br><br>
+<center>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 10</div>
+  <img src="./maharshi.jfif" style="width:350px; height:350px;">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 10</div>
+  <img src="./maharshi patangli.jfif" style="width:350px; height:350px;">
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 10</div>
+  <img src="./Peoples doing Yoga.jpg" style="width:600px; height:350px;">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 10</div>
+  <img src="./Modiji.jfif" style="width:350px; height:350px;">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 10</div>
+  <img src="./Modi.jfif" style="width:350px; height:350px;">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 10</div>
+  <img src="./Medition 5.png" style="width:350px; height:350px;">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 10</div>
+  <img src="./Medition 6.jfif" style="width:350px; height:350px;">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 10</div>
+  <img src="./Medition 7.jfif" style="width:350px; height:350px;">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 10</div>
+  <img src="./Medition3.jfif" style="width:350px; height:350px;">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">10 / 10</div>
+  <img src="./Meditition 8.jfif" style="width:350px; height:350px;">
+</div>
+
+
+</center>
+<a class="prev" onclick="plusSlides(-1)" style="text-align:center;">&#10094;</a>
+<a class="next" onclick="plusSlides(1)" style="text-align:center;">&#10095;</a>
+
+</div>
+<br>
+<center>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+   <span class="dot" onclick="currentSlide(9)"></span>
+    <span class="dot" onclick="currentSlide(10)"></span>
+</div>
+</center>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+</div>
+
+<div class="right" style="width:60%;">
+<h1><center>What is Meditation??</center></h1>
+<p>
+Meditation can be defined as a set of 
+techniques that are intended to encourage 
+a heightened state of awareness and focussed
+attention.Meditation is also a sonsciousness
+changing technique that has been shown to 
+have a wide number of benefits on 
+psychologiacal well-being.
+</p><br>
+<center><b>Some key things to note about 
+meditation:</b></center><br>
+
+- Meditation has been practiced in
+  cultures all over the world for 
+  thousands of years.<br>
+- Nearly every religion, including 
+  Buddhism, Hindusim, Christianity,
+  Judaism, and Islam has a traditon 
+  of using meditative practices.<br>
+- While meditation is often used for 
+  religious purposes, many people
+  practise it independently of any 
+  religious or spiritual beliefs or
+  practices.<br>
+- Meditation can also be used as a 
+  psychotherapeutic technique.<br>
+- There are many different types of 
+  meditation.<br></p>
+
+<h1><center>Why it is IMPORTANT??</center></h1><br>
+<p>
+Going huge popularity in recent
+years ,the simple practise of meditation 
+has an abundance of health benifits
+that can alleviate the stress of modern 
+living and bring some balance back to 
+your world.<br><br>
+<center><img src="./New img.jpg" alt="img.jpg" height="400px" width="800px"></img></center><br><br>
+ Let's face it, todays world is a
+ demanding one. With 24-hour
+ connectivity to work and constant
+ digital overload at home, we're more
+ stressed and under more pressure than
+ even before. As a result, our stress 
+ response - one of our innate
+ physological mechanisms that should 
+ only be triggered in life-threatening
+ situations - is triggered constantly.
+ Not by lions and tigers, but traffic 
+ jams, public speaking, heavy workloads,
+ and financial and relationship troubles.<br><br>
+ <center><h1>How does Meditation help?</h1></center>
+ Thy psychologiacal benifits of
+ meditation are far-reaching and 
+ the more you practice, the more 
+ benifits you experience.<br>
+ Benifits are:
+ <div class="lines">* Improved learning ability and memory;<br>
+ * Improved focus and concentraion;<br>
+ * Higher confidence in personal ability;<br>
+ * Increased productivity;<br>
+ * Enhanced mood and emotional stability;<br>
+ * Reduced anxiety and stress;<br>
+ * Increased compassion;<br>
+ * Greater creativity;<br>
+ * Reduced anger;<br>
+ * Reduced of negativity thoughts;<br>
+ * Increased happiness.<br><br></div>
+As well as many psychological 
+benifits, there are a surprising 
+number of physical benefits 
+too, such as:<br>
+ <div class="lines">* Decreased physical tension;<br>
+ * Lower blood pressure;<br>
+ * Strengthened immune power;<br>
+ * Slowing the ageing process;<br>
+ * Higher energy level;<br>
+ * Improved sleep quality;<br>
+ * Reduced physical symptoms of 
+ stress and anxiety such as digestive
+ problems, sleep, headaches or muscle
+ tension.<br><br></div>
+ <center> <h1>Consider health Insurance</h1></center>
+<p>While we're on the topic of 
+   health, consider if health 
+   insurance is right for you.
+   meditation-while incredibly
+   benificial- cannot provide 
+   the peace of mind that comes
+   with a private health plan.
+   If you opt for private 
+   health cover, you'll be 
+   able to:</p>
+ <div class="lines">
+ * skip public hospital waiting lists; <br>
+ * access treatement in private hospitals;<br>
+ * access unlimited emergency ambulance service;<br>
+ * skip the Medcare Levy Surchargeon your tax bill (in certain cases);<br>
+ * and more!  <br></div>
+</p>
+</div>
+
+<div class="marvellous-talk">
+<h2 >....Marvellous Talks of Great People....</h2>
+ <p style="text-align:center;">  <a href="https://youtu.be/tgk185lFnZI">Speech by Modiji For Hindi Language</a><br><br>
+   <a href="https://youtu.be/szbeeB5bGIw">Speech by B.K.Shivani in English Language</a><br><br>
+   <a href="https://youtu.be/TsD0MLIsShQ">Speech by Students</a><br><br>
+   <a href="https://youtu.be/QHqPVZBl-84">Speech of Ramdev Baba</a><br><br>
+</p>
+</div>
+
+<div class="type" style="justify-content: center; width:50%; height:400px; float:left;">
+	<h2>
+	<marquee>**Types of Popular Meditation**</marquee></h2>
+  <div class="types-cont">
+	<b>
+	<a href="./Mindfulness Meditation.html">mindfullness meditation </a><br><br>
+	<a href="./Spiritual meditation.html">spiritual meditation</a><br><br>
+	<a href="./Focussed Meditation.html">focused meditation</a><br><br>
+	<a href="./Movement Meditation.html">movement meditation</a><br><br>
+	<a href="./Transcandental meditation.html">transcedental meditation</a><br><br>
+	<a href="./Progressive Relaxation.html">progressive relaxation</a><br><br>
+	<a href="./Loving kindness meditation.html">loving-kindness meditation</a><br><br>
+	<a href="./Visualization meditation.html">visualization meditation</a><br><br>
+      
+</b>
+</div>
+</div>
+
+<div class="talks" style="width:50%; height:400px;float:right;">
+	<h2><marquee>**Articles About Meditation**</marquee></h2>
+  <div class="talks-cont">
+	<p style="font-size:14px;">20 Feb,2021:<a href="https://m.economictimes.com/magazines/panache/this-founder-has-resolved-to-avoid-opportunities-that-bring-extra-stress-even-if-the-trade-off-is-financial-gain/articleshow/81124790.cms">How to remove extra stress......</a><br>
+	<p style="font-size:14px;">11 Feb,2021:<a href="https://m.economictimes.com/magazines/panache/zeux-innovation-co-founder-believes-a-silent-mind-is-a-sharp-mind/articleshow/80837035.cms">Silent mind is sharp mind......</a><br>
+	<p style="font-size:14px;">04 Feb,2021:<a href="https://m.economictimes.com/magazines/panache/health-is-wealth-for-india-inc-wazirx-ceo-zeta-boss-bet-big-on-mindfulness-meditation-crypto/investing-in-wealth-health/slideshow/80643141.cms">Mental health is important......</a><br>
+	<p style="font-size:14px;">20 Jan,2021:<a href="https://m.economictimes.com/magazines/panache/nova-ivf-fertility-ceo-works-to-keep-his-body-mind-and-soul-healthy/articleshow/80342991.cms">Talk of Nova CEO......</a><br>
+	<p style="font-size:14px;">15 Dec,2020:<a href="https://m.economictimes.com/magazines/panache/for-testbook-com-co-founder-a-bike-ride-equals-meditation-as-it-reaches-his-soul/articleshow/79732618.cms">Bike riding is equals Meditation......</a><br>
+	<p style="font-size:14px;">27 Nov,2020:<a href="https://m.economictimes.com/magazines/panache/local-wellness-practices-find-many-takers-in-covid-times/articleshow/79416118.cms">Ayurvedic Meditation......</a><br>
+	<p style="font-size:14px;">25 Nov,2020:<a href="https://m.economictimes.com/magazines/panache/reading-meditation-help-hopequre-ceo-fine-tune-his-goals-objectives/articleshow/79408399.cms">Talk of HopeQure......</a><br>
+	<p style="font-size:14px;">20 Nov,2020:<a href="https://m.economictimes.com/magazines/panache/goqii-ceos-strategy-to-combat-work-from-home-fatigue-30-min-meditation/articleshow/79315603.cms">Talk of GOQII CEO......</a><br>
+	<p style="font-size:14px;">04 Nov:2020:<a href="https://m.economictimes.com/magazines/panache/venture-highway-founder-meditates-twice-a-day-wfh-set-up-includes-yoga-mat-and-bean-bags/articleshow/79032610.cms">Meditation twice a day......</a><br>
+	<p style="font-size:14px;">17 Oct:2020:<a href="https://m.economictimes.com/magazines/panache/world-trauma-day-practice-meditation-for-de-stressing-dont-be-afraid-to-ask-for-help-when-coping-with-crisis/articleshow/78717275.cms">Practise Meditation to De-stress......</a><br>
+  </div>
+  </div>
+<br><br><br><br><hr>
+<h3 style="font-size:30px">IF YOU WANT TO LEARN YOGA-<a href="./Learning Mediation.html" style="text-decoration: none; color: #e75e5e;text-transform: uppercase;">click here!!!!</a><br></h3>
+<br><center>
+<marquee direction="left">
+<img src="./last img.jfif" alt="CONS of Meditation" width="250px" height="250px"></img>
+<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYWFRYWFhYZGRgaHSMfHBwcHCEeIx8cHyEeHBwjHR4fIS4lHCMrIx4eJjgmLS8xNTU1HCU7QDs0Py40NTEBDAwMEA8QHhISHjQkJCQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIALoBDgMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAEBQIDBgEAB//EAD8QAAECBAQDBgQDBwQCAwEAAAECEQADITEEEkFRYXGBBSKRobHwEzLB0ULh8QYUIzNSYnKCkqLSQ7I0c8IV/8QAGgEAAwEBAQEAAAAAAAAAAAAAAQIDAAQFBv/EACERAAMBAAMBAQADAQEAAAAAAAABAhESITFBUSJhgQNC/9oADAMBAAIRAxEAPwDArWQTr78onJmM9vduMErwlQ2vSILksWN4qMkFGa7bEEE8a/Q+cNOxalh4bN76QoTKKRQc/tDnscjOlwQDdhr4dOkMmVn0eftEaioYBNOLe/CIEhMlAs5VfWgir9oF/wARTN81A9aUP08oqx6x8KUx3NecH4joR0JdCjS4r0MASpDoUSWteCUL/hlrZvS0Amacldx9WjaPh5eVKeZt0qIDSmqg+njs0WrQSkDiYMw2CAAUq49j3wgaFTpzDYYuO7SnhT7xo8N2ekkEJL0AILdfKA5Ms5gQCNae9xGn7Kw5CStdtA3ptAbw1dIJwshKE5lM7W3iMxRWzGvHnEJ5UugPiKNQ30i1LJSABSz7mEItEgoIfLc38IAXJUxzuQTbg9OQ/ODJY3vp6eEDYtanrVnDN4RgZ2KcYu6QKC/laJ4ZDhlBzp+XVomUFaynXcU3eLJaiAtQAOw1bX6wQ4X4RCkKdy2oG9GgvIFgkMFsx/XTaKMAVEgXFzRhThy9IvKGZvlF+OsFA+ncNiAk5NHq9vy0gPtXBAgqR3gbtQwTPlhYsAo1HHXrz1juFmEDKrW/dbeg4xRIK/TFYzApSlRCWcP+UZ+fJNXTYj1aPofbOFykkEkG2X3f7Rlp0qlU9TBaGc6tRnkNmu7X2gxKEqYveOYrCsKWNbRS9uAibJ5gcuXlXQ+2hnPSymoHb6QnM0lQFgw9INxs3vgH+kHwETZgzttDpQoapAfqfsIIlywcMsGpCwzaUMDY1f8ABltU1G1Hg3sxCTImBSqMliHNQWbzaFwR+mOxyWVcV8vZiufNZKXuPSjfWGGJDAgC5eoD+ntoWT5ZNhXX9YZE2DC5LfQeAi3DrIc26e9oslYcnjvwi0SE3JJ5fnBAMFhORJrV2rXjAaVB2If1aLs7kClLMB9Yq+HdmqaVFvGDpki9Eo3Seo93rDjsWUyw9y2VtvHnXnAeBSgAPUfXT8/bPsFlzhkgHUh9DRwbi0MmXiT3bmEBmKOuZx4nWw9Yrx+HSZSHLMCzDia6QV2zNPxiSlwFEtRtjfXXSB8egqQiwob11NH2EbTolAJQ0rapp/pGsRwuCzJIoGOutHgwJORbsS5N621GtoEQCUE1FWFb7ekDSiRAST3Upu5+94ZYDCd1QVUv+kVYBBIFKA2aHeBQxytf0jaF9FeDwgDuO4C7nbTz9YvXjFrOVFAzAe7/AKxLHzGGROl2q+kVJGRGcO+nDjGBm9jE4pKGSSMxFTEUPlBVv9aQDh1iili2p3fbpB4WFg5bNbyPlCtE6nD0gkqJelKtxME41Ld6l2bnrxpWJS8MxIzZXsL63MEYnD0SG4Hja5jEm1okwqDmVlo7+yOZfhFiyyqhyx8tOpDQ4kyMo7oBG/EP4RGZhgalICq03A9mNoHS0Ew8pkVIqHfYXrvAc1bFrA6N6b84brw3cvl1J/LygOfhTRQ72xdq8dhDyaX2CgZGU9Gtt4RLEzM6CUsCLgRIz0pGVRc8qA8OELpy1JLoDB73cezFpRRTp1OLCgUTLHnQ84XYnAurvdKXr9oMxeHdlAGteR5GDJCc6aiqfOC0PmGR7RwSs3d0D/X1gCRhyopBbjGpx0sqJOXfj9fbRnsSlWarg9bc/KJUhan6UYnDMsDQMHHENBeLlBSg5plFfDR4oxCCFo4hJrqQA77awXikkrZxVIB1sHD9REWTchGJw4+HLSK3r4GsMcBhwJMzUFI61DsC32gKYoply+6FfMAKM5LOB5Qw7IW8mYCKMBUPqBRvygCNGWx0pycuqv8Alr5VgJcsJBe+29fR4f4hCQSSkAOXLlzryeFGLlAnu3bXlpBROkL1TCeAsw+0SmSjlSxvWJy5Nfo466xcmQC4UQObcocUgTlzBgeLAefu8Skywo67c7flFKSFEliAeP5e3hrgJqQXbrx2218ono8ovHZhSA+tRpDrsyVUOwINhtbX1vFCZqlhkJUSbU15w4w2BWhWYsoNWtBXR+L0PGDpeUkD9vYXvvo79DU8NR7MRx6f4SSXF7B3sRvBvb5oCQKgXIfb79IDmkmQs3Ys5Zw/1p6RtKz4gCUP4StXII6uLmjOYD+GQlST/UOIDbU4wbhkOlaSXGV6VHIU5+UDyB3SDs+jPQl/SDpZBfZpJonx0cXaHktOVGYkOflhb2TIICSa3d7CxoIvxE3OXFtB791jCvtleHWQV5rXiSJpetAT4Df6eED4tdgLh3Hh4/rE5K3CQbkdG9eMMhs+hycPmDAhgHc0FzeD8PhSnLlUlr30tTpHThXSgZglIS533pSLkzAGoAkd1Ia9WPSvnGIVW+BamKgrKCbAv+HxYxJau6HPNq84FRMNAdbAAgAAOXNnrBBYppC4RaOpqNb+Fo8kgb+pB9tEFJypYb/nHUDuBXWnGDgMLCdGB3BNTFM9IKShLDNW9zR4sVt+KnsxSib+J6Xqk0oxHjDygpAc7AUGZSX0D+Q84DnHLQlms33N/CGq+/3RS5SoM3WAcdh2lpzKGZ7ir7aRWX+lIf6KDijmc2PkaeMclz1Bb6Uts94jiSkpDZr1o3rEZNUAOXF7Wc7XirRfiFdoyzlCksxtw398Yz2Mc0NC2tRxpaH+GU5ykgg2f3TaFnaGHIUl3qS4oQ76e9IhQEvgrmy8ynagoQTbduhg3tBP8RO1LDYB73qwiqTLzzQK32c7W5tBMxRK3BFFWJ0+ba1N452K5C+0pJEtAvS9quW5G2kH4HDZZCjyHt9H0ijtWhAL0CaBgNy/i9IbSgfhAAA5lAM9KDd6aecAhSMnj8MXYMQNeO9PdYBxHZxSM5sxpfSmkaPEYCYlJUGpVuDuSAHtSAsbiwxSQUtwoW9+9ShKRnsNKDsbO9x1+sRxKe+SogPZg/5RdiJ6XIIblsLFzSAJ8wAuQ77n7Q5NlMsMfe490g+WksGpoXLMfYPsQOiRYX3A0o2tDztBKdAwLCruQXsw5vs+sc+jyh7gx8NCchJzkurKTozvYEF7k0rtDPAYtWcAnPmFQWJNGBBNBezjxsp7OxJSnKsAoYbCruxINR89SeMNJGVPeSkEnYAnu1CgSCxqSO9YA6xuRaUNO2ZQUhIDu7C5fUa8Qa7NC/Ap7q0Aub3DU83+bSDJKSqSXbMKu70NDu3XasLuzld8guxdI5kV3AIrBVFJ8KcKWWUsCFOHPNr3F/KK8NLJXsBYdW2q/wBYtmJKVili13rqfKmzwxw2E7/B3J4fWhh0ym4EIlES8r94jW7VJ98oFSjIHL25946wZNLqb22n6xRipZIy6D3pDICYDLlJKq2u/wBvekHyMElRyrUAS+UA1bWKkobu9eXL3rDWTLSWWKqZhoHD+cOaqw8HQEj8KUliaqepAYC0cUvNwUwvpR7NeLJaCA1wxffWg1iqZKBt3VUJFL1YHccoKRIhLnN3TQ3S78fm4GJyMeGSX1Zzx4aVhXjF6KLEMymoprvqBp7eIYQKWtaP6qL0yqbuq8hTQtDcUM5WGgXi0kKJpUCp3b3WJKxaUuPwpudH0FOUDIwCgXJupBUBSqQQfMA+EQV2evK4Lqqqv9Rq76MGaunQjETxEpmJchJNzav+1waF28YsJduXSwcKv9YTy1ZCWFT861EDol+ez1rBmGnBQId6XFKVHNx0imD8Q/8AekpYV+YAgVAcPtQRSuTnACwzP8ttw72oIslqAsngT4M51jhWXBOxcDbU0MZAS/BRMwoBcMUEUb27wsfKeINtwffnDvGIypCUE1JVWpbwaAFJzpqxbpFN6OifCPwVOCl734XDxf2kCUhQPAji2v35xYiXRjdPvX3eJ4dDuDr61aI0B/okwMvKqoByuRWhppzeLcGgqmWDk0A1HAV2esEqw+ULLVtWr/ekS7Ll95z+GoL8LEcyKxBoFeacxic61Mo8qHwA0brDpSAmWmjsMwrrXc8Hq8JMNLJmAPq4fYnUdRpDbGKZYSkEsClt6ajZyNPSBhC14hMqarNmCvxBwkUVlDAZafoYWdrSUslbsogUIIcChFbXG7gONYdrCEnOQmtTYMaAUGW1wzvlfSEXa81SzXK4UWSQLHUm7s2mj8IyJ0hHiXer+LjLTp9POF09TWtp579LQ0VLJDZSDtfMb0exqOfOkCzMMSz0prwtVmMMSaO4buhRUWcWGo1saOD+VIYyspukUuk6GlqCv3hUEsFOauPLppeCJK8tt9PmDcW9mORsrJoJcxJUCUpNSQouXAAoRXh4txBy5yVIABUQBQFgxJ6u45X0jNSpjFjtU3+/iPrDRAIYNXjcMGatPLThC8sLSjR9kLcqQpgDRhw1BO5BPtoCnSymYKVve926Ve+kc7MmAZQHelyaEnbl6wy7Rld7MBeoo7agePpDKhvGDYiUAsKoxqdq1po4tDIIyIJFyG8PYgdSMyECrpLNtv8AWCVlu6A+UW984omK3oKlLd46esQlzUrofH34RfNUMjDQOfo8KVTsiXZidjFZY8rRyMO5YgcSPe0Fpw4CQkEtu9TV4S9lTc1SplGxdody1qyhzV3rDpi0miwLOrX984hiJoavSmuld4iuZagv5eECz5zCgen9XG9rQ6AloLiWJYtTQvu1WFK7g2hl2XhUoCQk+/t7pCrETlh3yAA1UQ7BzWtGtDDDYmj5yoC6qJRyoxJh34NSeBSsOqYtYUopSKJAJFLV3Ja+1Oc8KkpKkFWYAUJLniDvv48IQ9odrmWVJrdyebqrTYEnQOkXeLMBi1LUtRoACKNWtWetALa5uEDiJweBHaWFTRZSSRwYN0P1iOEWHomj3rZ6/MOIMD4/E5RVWXN8qhVKuhsfbRHC4ov3gxs/GgatQXNofOivF4PUzNgBTbw6NHJkkKcHUDSo5GKELB1e/H84vCXDpOjekDMJ5hViMMCHqDehvz8IXqkXs2p14QfOBDd5g1TCPFYvKru60cawUVhNkpWIGZrVtBgQxDVrrtC7MFKSWFaODc8YZoXmZhan2haQ9LDuOlhSQrQ+sDy0ZZZo5NOetOVIJX3kqAum3ofKI4lghKQ9BWj0N/XhCOSP9EexZblyCzl9aiKcZPzKJcECpLsQNQLjXbR2pU6QjIhRNHozNz98YSYlQUqji9HcMa0fX3vA4iZrbCpigruu7EhlWT1Gr5qttCTFZWKcoAaw1YkOz0rmp+UFrm5UZhuH1AalRWpp5wvnzgUqWAxDhTG771oKB+WsbiBoWTGBIA+U3BNBViKb8dGgHFmpU4IJFSNSKUJo4D9YsXMcnkLBm50v9XvHVylKU6DVq/ag5eUDCDI/uuckinA8xaCcLgu8xe/I14kcvdYL/d1ajvCy7pPAnfYloYycJ3i47jJVXiNWtUnzjzaovMitOHqznLY5Qwv+IuIeYfDEOoksQ49vCpSCpTqrx1HAaeMOezVsg/hAYA+dD6dYnVFJCpCRd9wG8KPU/nDSYkrQCmpTTptTrCVc9IGUqbi2oA36Q0wGIT8gLiz+Qr4+EabNS+k8EmldtuNOr0heJis/ry+0H4wZUl9S2lg35RXPQB32Bp56xaaFQvxU05yxpp9IqlpSpWU0G+1PvSC0SEKY5mZ3p4U5xzD4UkEM5EWmiiZzCoTmISXANCwIYbX+sO0KpUkHSmkCYHCBL5gOfCDhIOanysxEWli002VzQkb7gO1trGsVGo7qRz/yvtrwNoIWhIS5NgSNS1bDWKPivQBhTS4I200iiYELsXJBIKg52Idjqyd9afWBv3lSRmV3iCyEpql7OSWzH8t4PxIGRaxQIQo5iH+VJIpwbyhf+zuJStDlIKH7oq5GlDc70+kOmUXgP8bOoFYAcZUgm5zZlklru1tjwjqcdkzEJdIU9CxqEioNN9YdzsGiYpJSQEDvDLTcnTUmsTEhCUKzJCjTKAKsGq7Po8OmHkvwSznUrIPkXUJVQ5thwL726wZ2eKMQ6tC1wD+LrAeNm/x5KQzKITTmUjfQsf1ZwUpIqGVe1XAZ20bjB0LJ/DAYMxNKavUttXTV+kWocAsWPiA1wNooKyCAQ9gCzkuL8LGCikFgCHFquCRZ4DEZXiSTQCh4b7wjXhQSp1ZWFr1HWvmecPZSC3fNQXrp4QHicM6nA/OCvweXnQlw9HfXy36wfgJh7wJ5cfdYqXh05wCWSBs8SQgDKHDg68YbClY0X4CYc1bVf84JmS1FfU6ePQRCahKUE2evT9fSDZNgvRn6ikbj9IU/qOYtYACSbXbfXn02hLi+7Sm458CNecFYrEBVyxBrpwN9TA6ZiVHkNacL7PfnBUdCJYLMYSEkqJANgzWbY/a/KBZcrNmDqNz3gx6mo3/5bxd20s/EII0d+YflFfZ0zvNQJrQO1hUa7X4QHIrYpXgu8ens04eRiidMyKLOX2LCnSNFMkHOstUCmnAXswHkdjAP7qfwjmSWB/xfTpE3JOpOSMKtKsySrmnbgRD5HaSVJCFIAygMo682oWjK46aUJGTum5ahbZ4GwmLmPVRL3zO0eM02h+SXRrEyAVKKRQXI3itCnIQ97+FX9NPrA6MaSilCKnx14N6xFM6pUkpATQ89Igx0wv8AdipbAil3LAcSTUV9mLsKkoWQoWHC24OutYGk4khQUkAkhiNFC77ghgaVcQwkIMwhdBYU0AoA20BsKY3xKc6Aq7CvNnHvhFcuqMlns/v3SPYGf31A/Kr2IYTEBwAPd4pNb2L50KUYQgg0rQ8oOQUIavMi0W4mWAl9NuJhZiC4oagb6XjomsCv5B37wCaAA36eO8d+Mojuv79+UK8NMahIqKvz9beESOKQlRGctWo21ZjF5odQNPhkhJYKLGo9GsYgqSk3qKUo4NnPvwgX95zAZKKFASb7Nxi8BRYkDMRXvCqnf9WiyZuLQL21NJkTgAf5a27tD3FdHLxhJGKCEpy3BqaF1FnYGtiwbcnWmo/aXtFEqUuSX+JNSApIL5ElwVEk0dLgD0EZKXh/4aZgBBUtSUsTUISlRamuYB+ENvY8dGgldpryFwBUapSQ71NiXyg1r34pmY1a5anLbBhuMwd3J+9oBXMBT3Q6MuoIS6nJYi5oVN5XanGzUiVUKcnusCQSAHagy2H+2LJlsSDezZo+NIAIbOkilnVlY9dttI3MxIUHY10ZiSGH084+dlPwVylalKJiRWpdzXbMFePBo3nZ2NRPR8SXUH5gosUkD5SHYGoOxBB2gpkafaZfJvlPzO4Aag29vHSkhKQkBN6Au+t4rnpUAClg5JUcwdr+F7QHiJoSyQohnII/qP0g4FToxnrHWKUzkjRjz1q8BSMalWrXoeDe7QKqaVENd7++sFSMv+fwbT5aVB03rQ6mBJWELgnWpeJyZgIFyxhiqUG5+2h10K256Apys5TSgp4flF0w5UZa6E9be+MEoy5XKbe2hV8XMtb3UPSo6w8rf8Je/wCFCZJWSGo9Ks5246RBOHfmLi3jyi4TyhwEpL1Y7trXbTlAGJxjA1qfmO5OgYRTGZ6RnyBMu1KDw2ekCYaWEFZVpfx82iEyapJKXBOhG1/SAu1cUQwpQfSEpEqYyx/bQCDLQmr/ADh83Q7feF0lKld4kh9VU6Ak1hH8VZsSBbbzi9CKfKD4+zEGS5Dz46TlJTVJdL3eBlzEElksSSbipN9B4QAtS0kv7rFyluAoC4qGpxjwmg8gqclOZ3vUgh28DHEZSSzsd2qR7NInhio/NTZxcbdYKQhAOVQG5ppozW5xJsdBMnDqUgO73SRtz0/SG/ZUs/MbVPI/qPOOImBTJQ9BtqetKML6cYa4OSnIqtAltok+2PvQsRiBmABqTYFmLw+RMdDgVbxEZvCYUFeY2DlhRyNvDzhjhZhDbCv5eUPLwZzoUrFOGVyOnWEs9RQo014wxxSHGZJobcN4AKc6WPzWDRaWx4lIqxi8wGUN0/OK5SEkF3cjw/X7QVLQ17H2/j6x1QyVYENelv0jpkon8M7+001IQhBSvKFpUVpCu6AFVC2ZJBINxrq8U9nftHNCU58ilAMlZS3e6d0nW0P5+KAVmTQsGrxt5+3om/avALVIROSO4glKwNEqbvcEghiR/UDpFlpms7ZDDYOROmFc/EAZlOq6VE/3KUMqabaAWgz9tfhoOGkoCciQpQSlvlJQE+LKrWMbKm0Z7kgvbLb2B47TVQEElgAhILWoe66SRUmnHe9JYGu0xngFEK7xHzFSWo5AUTq7F6H6RV23NJCSSK1yuP7SM1Qxd71eOYKcVgE3DpDEFL95mJ1LM77chXiylfyulJVShcBgoNSpADVbrrZeFG/49G07NlYedgZSp6koKAUJWVBKkqCilgpV3AFKvzhXg1pwy1mXNSsLFQxAUGLZnobUIJLk7tGZWQADmLCqb5XJIcBjlUzOeWlpTpn4U5jQBrnMcuUADVzaGXROVm6Me1O2VzBkUQmWoKZKAxWWOQOS5BVlcDR40uGmiZLQSlSSABVJTZnooWrEMNhV4eVKQsd8Am75SolSk9CpqULQRLnhKWFXNK8qwyX0pK/9IpngAsl6nzGkWGYEpZq2t+cWoQCMzDgN/dIgqWVKJ4/r0h0Ppd2eWJUbQzRiiogCv6wmJsE/LpDKV3BxIpwh8I2l6FY6awpsTTk/0aFOHnArS1STzpa8WjvKGa1mHFx6wLgMLlmMTrfYaDh1ikpJEsxEsThy6q1Zhw484VY2VZJcIFC931jQ9poKVHK93HhrsIT47FIyKQsVBuRxccd6Nr4Oq1CN9CPEzQC5etqCnCA1rSQSD0Fh4l4OWrOoEsGFmoNiKdf0gCcnK4bunh7eEsjRyROCcwTZSWLkW10jicYRYAeMUrDB93098Y7JQSa7bcogxNLia8NRwj0wHKGVa9TTb6xzEzrU0+tuMdl4jKx7x3oHrbw+seCDS+RiVOHNqFzDNGLSWAfn5tu0JUrBcPW1tXoYtwyzs3T6cXidTo80bLALATU1a3C7Q9kF5bsz+cZHBrdtDGrd5QrXw2iakoDycMGWRSnv9IpwZBzB6gP9DU+PjBqFuhWfrT1EC/AyJK0GuhhlJSWQw08ZiCaWaPTMJlL71B8bbRTKSFupOnzJFxyFyPT1Yy5ySnKQ230+tItEjt54DqSFBwBmF/vtvFJWkgoUrk4tvBC5akKerbtTxeIz8OJnyNm1onxvHTKCmhKnCd8gFkA1q3JiaPGiROBSyWLUKQpNrWe0L5s9ATlJAbgi/wDtJgI4kynWADoLh3v+BrbcOcVnodp0hJ+2/Z6ApCsPIyrcheTX+nuJpd3VwF3jOq7On5f5C2sDlJ50uOTxp8WhQZaFqyKsaEA6hbIoelRWOTcQUgPok1S11ClMlKEbWiiSCoWdMzcnC4g2kTKhmyLD8aXF4hMwU5X/AIZp0bIptOHONV2ZiC4ZRY3tZIc0KOjxRisSoF1KILkeB0GRgPtFZSA5/sz03BYgJrJWyifwl6nVr9Y3/wCzOElokIUJKROygrU7qtuap5c4ULmFaSR3QC7mpY2pk32EW4KYUNNWVNZCVMMzbAofKNTTbWKYkByv00eOZSMqj3j/AHJceevpCbDSGWc5+W2vGlK6wQiYCc5ZjV2evVDXi9TTQEpIJ0LJ+iYw0visOhQWe7VmYN4xJaUtlHVj94sSkIGUEBWtE+F4nJkt3lOE7EXhkwcirD4UIAWbfnEETMy7uXgnETQoAN4c9PG8CSwEK/vOm3PjwiksG72y4I74SDY1508dIIXIAW7OXvtHF4UBWc678fWJ4tZJZI2fdvp+sNy3wi619Ee1F5QmlwO9bhGW7YWkjukqu+h5+9403bIdCa3HPXWv1jG4uZdh1uRFP+a/iL8ADisr8bA6cYCmYlS3BPn9olib6te2j25xCWrKaOW4VL0t7vC0RbL0gMkE2uBd9OG0G4ZIS9jzb1aBCoUcmnCj7u/6NBgygVJFTRvO/ukTwAOnClWo4Oa5n9L9KwOqSABlIbSp/wBV2raD5CyU5cx0A2d734Pa52iC0auoE8g1elC//GPntJgmHCXOtNy+V6kBtvKGGHRuzG7Gw034wEu5YEa8L/LZ76Pc7QRJWoJZifAkjbUED6iA1o0se4aWRdv1tfpD4TQEISeN39YQYWaks+aha963PInyh1iPkSS+u28JhaWMkKBQWtsa7+ECzJaspyODqzKHVJ/OJ4aYQg5W4fm2sBYlByEvtx3h1JSSErFNdLKe6XSeoIIMMcDLClOX491n5s4HN4Qoz6LUwv3ilurwxmYpGQZpjqNxVfgwisId/wBD44cAZSQp7bh4oXLCAWY6vU04Mzgc4W4ftEIAKZa1Ka5oEjRgHfqdYhL7UmrVlKZtdi3WgppWOhNCqa/wvxGBTNLJUl7/AIjf+1R9CIT9o4EoYDKBYHvlJP8AdXu8y49Y0U1eRJUPiFRJAawdn04W/uMBycUT8wmHn+kOkPFV78EHZU7LMZklK1BCknPRRol3O9Qb0UOdXaEqXOWTJWnM7ZCVpUG/p7zL6VpGuTLFyJoZvxE1BKR6RncT2QhS1ETFgubgb/8A1mKIZVr0U4AhEwJWkByxSc6SxcOHsamv6xUmUqas5UpJf8IXRyTvSpJfiY02Awq0qA/eFFL2UoqHgpDRzE4FS3CsQvLsFkD/AGiW0URnXYJ2V8FKhLUpClqplSVqbV1qdqN8o24wHOWqavMcjq+VPfASgPdjYMacCTxd9k9koQsKC1kh7AbH+wGHEyUEuWmEMPxFmqpm5iG0R3jEeC7KMxIBbdJOcf7UuKcy1oZypaEApzJpf5zXTuhh6xVNx6nZKZnTXygsqzJzj4gUX7rt3iAKU4U/yO0DQVVfSYwwUMxAB2D14F9YmnDBbHMABp74wp//AKs1KiMkymhqOTERybjkqJUZa0lnVTMmlybEecFaDKLcSnISxU+7ehNvOB0LdQyJAJuWKleYCYniJqSkZJl794prowIgRJU7FaiRcO9+Zi0jb0OVynZ3f+4/QfePY9aQA/DgPCISgUsXGkV9pF6nbh1vDz6ie9guOmgy0nZ7UjLYxbEuA31q1njU4lDS0uC1bNUUYc/rGaxJFQAokbsSXPEGgbzjonwFPoUzQSbcWeubSm1tLQMhIc5WAq3eo+tS3t4MxCVauLh6Xdsxq9DwuNoHl5iSGUPAEVDnQV+ghaXZBs8uWHAcWLVPy6todWrWCzLKmHdLCjGjc6+3iJS1wo3JcBgxqklnctVj+LWLhiVP8yhetH0pcjn04xPAA2HWMxppW/y0+nlxizETEpACgP7mdr922vzPA8krd65b9X+W1wfMQTOS7EOqjVIJNW4ijf8AKPm2uyaZQtdXAS5Ol8z06fSCcEcwIS3AEGpet7lmbrAsmSoqKQS1r0Af5t/K8X/DWm4IOtQCA4N6Cr9Wg4MmM5KA5BNdGd8tXbTdukP8QtpSOrkWFae+MZvCKWS5BA+u1qvz1jTTkfw0AAqvcg1prWgv4QMKyyuViv4aiK1r1FIihZKCp2d3bRwQfIxPDymQda1axcH0tBowychJY1FN77Q8oqmIcRhEJkuFVNEtrzY+sKuysUlK/wCI+uUA+J5D6RpT2c6TsNHAhH21hVlCQgkLBqoLDNsBm29NXpRIdUEYeagqWwWpD1UPDaxvzeDFLlkZEBSdCxDn/ItaFchawpAStTH5++mqg9GzWZvdmmKxSky7gKLgHOm2pv08YoissBn9pSszd/KKCotvbW/WOpmy1DuZ32zD7QonTpoL5/8Amn/tEsL2jOcd8f70f9odB5/B/PxeWSc2fvKAFR+EV03IhHMxaSokBZJu6vsB6w+xOOmFKElQcJr30XNf6tmhdORPuFhv80/9oohWwXBdp5VpZKhUaJPmsGJqxmZR7qvAJ/8ARoDTMxGcd7X+tP3grDKxJWrvan8afvDJiJhGGxaEF2W5pRT+o+sOp2Izy0llsO6agbkacVQvlfFSHUsf70/9oJT2jNKFpCh8pI76LpqfxbPB5GbBFzpKL535j7RPBYuUo5SVsrjY6G0Ip2Pnk1X/AM0f9oJw0ydQlf8AzT/2pB03LTSYhcr8aVFSaO4fYcxC5GJQla8+dKgAwsaU2vqawevEKXLBdiAyiFpJOxHe06aRncUmYuWnvq+IWfvptRvxQyYro9LnCYt0PketbcRwjQjDJSpC0q4pLB67u51gfBYVWVCQ/wAoCwVg5jrr76OWicCElJNRxNr7bRWWK7ITl5cttB9o5j54GTMWLNwPhBONkMzB7H7QLiUEhNiQBQtUH7N5xeWngnI5jATLToXPN6eV+kJUSg5YpbYhx/cGOvy+cPJ62lJDkHcGgDit6njasZjE4pblLEdRStKlrv5bRaH0K6PY9KFMQAaHRT5PS3VoVL7oOYJG7PZ+71vB6lK/ECNeAOY92z3AF7naB/h3JdbOQ7HUOHDil+sZk29KpAcElvCuayG4fLFXxACdA53vyvBc+gYEgF9QzOXJq9HLsPwxS6gXU71As5FK1HLy4xOgaclLctTnlrn17zVFLbUaCZCHQ4IpYEPdn34QCdOR9BBI+Ue9I+aYiKPihKuLVo3deoodoIQzKdmurukA1owpV36c4FnXHMQXgz3R19BBCgzDgFTsHFLF8z91lNS45NGnlBK5QcD5lUylnYaOdH9mMvhP5iOR9FRp0/yVc4JWQlC0BBrQUbhY8tYM7MRnRmWFBBDpNGd+PPyhPhLL/wAU/SG+GWfgmpt/2h4H+B06VLKQHajUo5qxL0eM12h2avMtAKXKXOYGj/d40/bNEJand+8LcP8A/IV4dHNIqGGzL/ASCiWQkKBqpjQXvwEJu0FpUsj4gYUAY0Ah92383RP/ALJjGYn+af8AL7wUWb6LMShJDfEHgr7RRhsMCpIExNwLK16QPN+XqfQR3AX97GHRNvsaT1JUtShMF7MbaabROXPAP8weB+0JsH845GL1XhheTNPgEIWoErT4H7RztVaULWErSKnQ78oUYD5eoj3bn81f+RjaM6eElTX/APIH5H7RVKWEqB+IKGtFeFoGw/vwgBV+sbSbpjHEYRIWR8QMDSiraabVgySlNB8QeBhX2h86f8U+giyV/wDj7wUDezR9mTEhQ74Iq4Y1oaWh4rA5yj4YQnKxdixq4PGmkYrs6yve0fSv2b+RPI/+sVXgXTw72VgqqWs0SplZQzECwemnnDj4cvKHPMi56mnKFkn/AM3+X0hrO/lI/wBPoIzJU+xP2mSlaQQQhXymlt+O8D49KV5U0NiAQ/Nw3KCO1VFr2ZuFE22hXi/5n+tEdUfA70Q7VUEoQlqZNQXyPz20bhGbnkIBcDjQipPdpT+6vrGl7Yuj3+IxnVGn+o/SOifBaYuxBUVZtRR21elWtam1In2dlUWDVJunlu8SxNj/AI/9opwijnvqID9Ag/Gy0oUzuAOVKk8qPygczmNkg6d3KMujjLUu9dK1rBGIt/qT6RRL+0JQWf/Z" alt="img.jpg" height="250px" width="250px">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSES5_GgDVIzP5CuQTGEDFCUZ8T2iWZB7sNDQ&usqp=CAU" alt="img.jpg" height="250px" width="250px">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKzMjdDX3PO6ZoQ5-EbEFaB9RcMZNo-6B2TA&usqp=CAU" alt=img.jpg" height="250px" width="250px">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTepKfITqRtEEXUICi_lKk7SWAbdxV6PQYkIQ&usqp=CAU" alt=img.jpg" height="250px" width="250px">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPN9TeNok6Uvgy6tZR7ieZZLAG_fgFEErC7A&usqp=CAU" alt=img.jpg" height="250px" width="250px">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-oAm75U9v6WwzcxuqXYMPxsNPT82Wo6HEhQ&usqp=CAU" alt=img.jpg" height="250px" width="250px"></marquee></center>
+<b><hr></b>
+<div>
+<center><h2>You Can Join Our Community!!!!</h2>
+
+</center><br>
+<div style="float:left; width:50%; font-size:15px; margin-bottom:10px;">
+<center><h4>
+<p>Contact us:<br></p>
+address:<center>420-Gandhi nagar,<br>
+Near airport,<br>
+Solapur-413 225.<br></center>
+Email:<center> abhijitsalunkhe2002@gmail.com<br>
+       chaitragotur05@gmail.com</center>
+phone no:<center>+91 84219 74195<br>
+            +91 63623 68370</center></h4>			
+			<br>
+<a href="https://www.facebook.com/abhijit.salunkhe.3576/"><img src="./Facebook.jfif" alt="FB.jpg" height="30px" width="30px"> </img></a>
+<a href="https://www.instagram.com/abhi_.s.s/"><img src="./Instagram.jfif" alt="Insta.jpg" height="30px" width="30px"><a href="https://www.instagram.com/abhijitsalunkhe4195/"></img></a>
+</center>
+<div style="text-align: center; padding:5px;">
+<p class="cp-text">
+  <h4>  © Copyright 2019 AK Yoga. All rights reserved.</h4>
+</p>
+</div></div>
+<div style="float:right; width:50%;">
+<center>
+<img src="./Logo.png" alt="img.jpg" height="275px" width="275px"></img></center>
+<br>
+</div>
+</div>
+
+
+</body></html>
